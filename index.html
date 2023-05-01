@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<!-- Game Game HTML5 document. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+      <title>Chicken Invaders Game</title>
+      <link rel="stylesheet" href="finalstyle.css">
+   </head>
+   <body>
+    <header> 
+        <div class="LOGO">
+            <div ><img class="logo" src="images/logo.jpg"></div>
+            <div class="headname">*Chicken Invaders Game*</div>
+        </div>
+        
+    
+        <div class="Menue">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#" id="menue" onclick="gotowelcomepage()">Welcome</a></li>
+                        <li><a href="#" id="menue" onclick="gotoregisterpage()">Register</a></li>
+                        <li><a href="#" id="menue" onclick="gotologinpage()">Login</a></li>
+                        <li><a href="#" id="menue" onclick="gotoAboutpage()">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+      </header>
+    
+    
+<!-- WLCOME_PAGE -->
+      <div class= "page" id = "welcome_page"> 
+        <p id="welcomeuser">Welcome user!<br>
+        The game was built by Lana-212080188 and Daniel-307957290.<br>
+        if you already have an account, click the login button.<br>
+        if not, click the register button.<br>
+        Have Fun!</p>
+        <img class="logo2" src="images/logo.jpg" style="width: 10%;height: 10%; margin-top: 2%; margin-right: -5%;">
+        <button id="buttonreg" type="button" onclick="fromwelcometoRegister()"> Register </button>
+        <button id="buttonlog" type="button" onclick="fromwelcometologin()" > Log In </button>
+    </div>
+
+
+
+<!-- LOGIN PAGE -->
+
+    <div class="logPage" id="LOGINPAGE">
+        <form class="form" id="login">
+            <h1 class="form_title">Login</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" id="logInId" class="form__input" autofocus placeholder="username">
+                <div class="form__input-error-message"></div>
+            </div>
+
+            <div class="form__input-group">
+                <input type="password" id="logInPass" class="form__input " autofocus placeholder="Password">
+                <div class="form__input-error-message"></div>
+            </div>
+
+            <button class="form__button" type="submit">Continue</button>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkCreateAccount">Dont have an account? Create account</a>
+            </p>
+        </form>
+    </div>
+
+
+
+
+     
+<!-- CreateAccountPage -->
+
+    <div class="createPage" id="createAccountPage">
+        <form class="form" id="createAccount">
+            <h1 class="form_title">Create Account</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" id="createAccountUsername" class="form__input" autofocus placeholder="username">
+                <div class="form__input-error-message"></div>
+            </div>
+
+            <div class="form__input-group">
+                <input type="First-Name" id="createAccountFirst-Name" class="form__input " autofocus placeholder="First-Name">
+                <div class="form__input-error-message"></div>
+            </div>
+
+            <div class="form__input-group">
+                <input type="Last-Name" id="createAccountLast-Name" class="form__input " autofocus placeholder="Last-Name">
+                <div class="form__input-error-message"></div>
+            </div>
+
+            <div class="form__input-group">
+                <input type="date" id="createAccountDate" class="form__input " autofocus placeholder="Date of birth">
+                <div class="form__input-error-message"></div>
+            </div>
+
+            <div class="form__input-group">
+                <input type="Email" id="createAccountEmail" class="form__input " autofocus placeholder="Email">
+                <div class="form__input-error-message"></div>
+            </div>
+
+            <div class="form__input-group">
+                <input type="password" id="createAccountPassword" class="form__input " autofocus placeholder="Password">
+                <div class="form__input-error-message"></div>
+            </div>
+
+            <div class="form__input-group">
+                <input type="password" id="createAccountPasswordConfirm" class="form__input " autofocus placeholder="Confirm Password">
+                <div class="form__input-error-message"></div>
+            </div>
+
+            <button class="form__button" id="createAccountSubmit" type="submit">Continue</button>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+            </p>
+        </form>
+    </div>
+
+
+
+    <!-- GamePage -->
+     <div id="GamePage" class="game"> 
+        <div class="choosing" id="Choosing">
+            <form class="form2" id="choosingpage">
+               <h1 class="form_title">configrations</h1>
+               <div class="form__message"></div>
+               <div class="form__input-group">
+                   <input type="text" id="choosingTime" class="form__input" autofocus placeholder="Time">
+                   <p>fill Time you want to play.</p>
+               </div>
+   
+               <div class="choosing_input-group">
+                  <select id="shoot-key">
+                    <option value=" ">Spacebar</option>
+                    <option value="a">A</option>
+                    <option value="b">B</option>
+                    <option value="c">C</option>
+                    <option value="d">D</option>
+                    <option value="e">E</option>
+                    <option value="f">F</option>
+                    <option value="g">G</option>
+                    <option value="h">H</option>
+                    <option value="i">I</option>
+                    <option value="j">J</option>
+                    <option value="k">K</option>
+                    <option value="l">L</option>
+                    <option value="m">M</option>
+                    <option value="n">N</option>
+                    <option value="o">O</option>
+                    <option value="p">P</option>
+                    <option value="q">Q</option>
+                    <option value="r">R</option>
+                    <option value="s">S</option>
+                    <option value="t">T</option>
+                    <option value="u">U</option>
+                    <option value="v">V</option>
+                    <option value="w">W</option>
+                    <option value="x">X</option>
+                    <option value="y">Y</option>
+                    <option value="z">Z</option>
+                  </select>
+                  <p>Choosing key for shooting.</p>
+               </div>
+   
+               <button class="form__button" type="submit" id="contchoose">Continue</button>
+               
+           </form>
+        </div>
+        <div class="game2" id="Game">  
+           <audio id = "championSound" preload = "auto">
+            <source src = "Audio/champion.wav" type = "audio/mpeg"></audio>
+         <audio id = "sadGameOverSound" preload = "auto">
+            <source src = "Audio/sadGameOver.wav" type = "audio/mpeg"></audio>
+         <audio id = "throughGame" preload = "auto">
+            <source src = "Audio/throughGame.mp3" type = "audio/mpeg"></audio>
+         <audio id = "Spaceshoot" preload = "auto">
+            <source src = "Audio/Spaceshoot.wav" type = "audio/mpeg"></audio>
+         <audio id = "eatingchicken" preload = "auto">
+            <source src = "Audio/eatingchicken.wav" type = "audio/mpeg"></audio>
+         <audio id = "brokenspaceship" preload = "auto">
+            <source src = "Audio/brokenspaceship.mp3" type = "audio/mpeg"></audio>
+         <canvas id = "theCanvas" style="width: 600; height: 600;"></canvas> 
+         <p><input id = "startButton" type = "button" value = "Start Game">
+         </p>
+        </div> 
+        <div id="leaderBoard"><br>*Personal Leaderboard*</div>
+    </div> 
+
+    <!-- About -->
+        <div class="popup" id="about" role="dialog">
+            <div class="overlay" onclick="gotoAboutpage()"></div>
+            <div class="content">
+                <div class="close-btn" onclick="gotoAboutpage()">&times;</div>
+                <h1>About</h1>
+                <p>The Game was built by Lana AboRaya and Daniel Aspir.
+                    <br>The goal of the Game is that the spaceship should eliminate all the bad chickens.
+                    <br>Every five seconds the "bad" chickens will accelerate their speed.
+                    <br>The "bad" spaceships can "shoot" bullets at the player's spaceship.
+                    <br>> If a ball fired from a bad chicken manages to hit the player's spaceship,
+                    <br>it is disqualified and returns to the starting point at the bottom end.
+                    <br>The player will be allowed 3 disqualifications until the end of the game.
+                    <br>We encountered some difficulties when building the chicken invaders game,
+                    <br> such as, resolution, results from a spaceship impact with a chicken and
+                    <br> building the leaderboard.
+                </p>
+            </div>
+        </div>
+    
+
+
+    <footer>
+        <h3 id="contactEmail">Contact Us in Email:</h3>
+        <p id="name1">Lana AboRaya<br>
+            <br>
+         Daniel Aspir</p>
+        <ul class="contact_icon">
+        <li><a href="mailto:lanaabo@post.bgu.ac.il"><ion-icon name="mail-outline"></ion-icon></a></li>   
+         </ul>
+         <ul class="contact2_icon">
+            <li><a href="mailto:Aspirdanielle@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></li>   
+        </ul>
+    
+
+       <p id="Rights">2023 Chicken Invaders Game | All Rights Reserved</p>
+       <div><img  class="img1" src="images/SlobChickenHead.webp"></div>
+    </footer>
+ 
+    <script src = "finalJS.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   </body>
+</html>
+
